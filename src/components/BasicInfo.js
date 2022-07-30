@@ -1,5 +1,6 @@
 import React from 'react'
 import BasicInfoGrid from './BaseInfoGrid'
+import './style.css';
 
 function BasicInfo() {
   return (

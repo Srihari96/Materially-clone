@@ -73,12 +73,12 @@ select{
     align-items: center;
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (min-width:300px) {
     #offcanvasExample{
     max-width: 80%;
     } 
 }
-@media only screen and (max-width:800px) and (min-width:600px) {
+@media only screen and (min-width:600px) {
     #offcanvasExample{
     max-width: 35%;
     } 

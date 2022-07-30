@@ -1,11 +1,20 @@
 import React from 'react'
+import './style.css';
 
+
+// function activateSidebarIcon(uid){
+//     console.log(111)
+//     let sidebarEle = document.getElementsByClassName('sidebar-bttn')
+//     console.log(sidebarEle)
+//     Array.prototype.forEach.call(sidebarEle, function(ele)  {
+//         ele.classList.remove('active-sidebar');
+//     });
+//     console.log(document.getElementById(uid))
+//     let el = document.getElementById(uid)
+//     el.classList.add('active-sidebar')
+//   }
 function SideBarDropdownIcon(props) {
-    const {number, dropdownElements,heading,headingIcon,isPro} = props;   
-    let isProElement =''  
-    if (isPro){
-        isProElement = <span className="badge rounded-pill align-bottom py-1 px-2 d-flex align-items-center sidebar-pro">Pro</span>
-    }
+    const {number, dropdownElements,heading,headingIcon,isProElement} = props;   
     const dropdownItems = []
     const uniqueId = 'accordionPanelsStayOpenExample' + number
     const uniqueAriaControl = 'panelsStayOpen-collapse'+ number
@@ -21,7 +30,7 @@ function SideBarDropdownIcon(props) {
     
     return (
 
-        <div className="accordion border-0 p-0 bg-white mt-3" id={uniqueId}>
+        <div className="accordion border-0 p-0 bg-white mt-3 sidebar-bttn" id={uniqueId}>
             <div className="accordion-item border-0">
                 <button className="accordion-button border-0 bg-white p-0 text-muted collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target={dataBsTarget} aria-expanded="true"

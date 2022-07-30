@@ -1,7 +1,7 @@
 import './App.css';
-import './components/Header'
 import Header from './components/Header';
 import MainBody from './components/MainBody';
+
 function App() {
   return (
     <div className="App">

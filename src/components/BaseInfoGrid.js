@@ -1,4 +1,5 @@
 import React from 'react'
+import './style.css';
 
 function BasicInfoGrid(props) {
     const {number, desc,cardFooterText,cardColor,footerIcon,bodyIcon} = props;   

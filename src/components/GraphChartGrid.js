@@ -1,11 +1,12 @@
 import React from 'react'
 import salesgraph from './salesGraph.PNG';
 import revenuechart from './revenuechart.PNG';
+import './style.css';
 
 function GraphChartGrid() {
   return (
     <div className="row py-2 px-4 mx-0">
-      <div className="col-lg-4 col-md-12 col-sm-12" >
+      <div className="col-lg-4 col-md-12 col-sm-12 mt-2" >
         <div className='d-flex flex-column align-content-around '>
           <div className="card border rounded-4 shadow" >
             <img src={salesgraph} className="card-img-top" alt="SALES" />
@@ -20,7 +21,7 @@ function GraphChartGrid() {
                 </div>
               </div>
           </div>
-          <div className='card border rounded-3 shadow mt-3'>
+          <div className='card border rounded-3 shadow mt-2'>
             <div className='card-body d-flex justify-content-between' >
               <span style={{fontSize:"12px"}}>REALTY</span>
               <span className='fw-bold' style={{color:"#ff413a",fontSize:"14px"}}>-0.99</span>
@@ -30,7 +31,7 @@ function GraphChartGrid() {
           </div>
           </div>
       </div>
-      <div className="col-lg-4 col-md-12 col-sm-12" >
+      <div className="col-lg-4 col-md-12 col-sm-12 mt-2" >
           <div className="card border rounded-4 shadow" >
             <p className="card-title p-3 fw-bold" style={{fontSize:"12px"}}>Total Revenue</p>
             <hr className='m-0' />
@@ -53,7 +54,7 @@ function GraphChartGrid() {
               </div>
           </div>
       </div>
-      <div className="col-lg-4 col-md-12 col-sm-12" >
+      <div className="col-lg-4 col-md-12 col-sm-12 mt-2" >
           <div className="card border rounded-4 shadow">
             <p className="card-title p-3 fw-bold" style={{fontSize:"12px"}}>Traffic Sources</p>
             <hr className='m-0' />
