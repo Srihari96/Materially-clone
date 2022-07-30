@@ -9,6 +9,14 @@ const  hideShowSidebar = (e) => {
         document.getElementById('left-bar').classList.add('d-lg-block')
         document.getElementById('right-bar').classList.add('col-10')
         document.getElementById('right-bar').classList.remove('col-12')
+        btnelement.setAttribute("bar-status","open")
+    }else{
+        document.getElementById('left-bar').classList.remove('col-2')
+        document.getElementById('left-bar').classList.remove('d-lg-block')
+        document.getElementById('left-bar').classList.add('d-none')
+        document.getElementById('right-bar').classList.remove('col-10')
+        document.getElementById('right-bar').classList.add('col-12')
+        btnelement.setAttribute("bar-status","closed")
     }
   };
 function Header() {

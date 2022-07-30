@@ -10,7 +10,7 @@ function OffCanvasSideBar() {
                 <img height='35' src='https://lite.codedthemes.com/materially/static/media/logo.07f95c57.svg' alt='Logo' />
             </div>
             <div className="offcanvas-body p-4">
-                <Sidebar />
+                <Sidebar screen='mob' />
             </div>
         </div>
     )

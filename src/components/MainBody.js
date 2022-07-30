@@ -4,14 +4,22 @@ import GraphChartGrid from './GraphChartGrid';
 import OffCanvasSideBar from './OffCanvasSideBar';
 import OrderList from './OrderList';
 import Sidebar from './Sidebar';
+class MainBody extends React.Component {
+ 
+  componentDidMount () {
+  
+    let ele = document.getElementById('right-bar');
+    let ele_height = ele.offsetHeight
+    document.getElementById('left-bar').style.height = ele_height+'px';
 
-
-function MainBody() {
+    
+  }
+  render() {
   return (
       <div className='row p-0 m-0 w-100'>
         
         <div className='d-none shadow px-3 py-4' id='left-bar' >
-          <Sidebar />
+          <Sidebar screen='pc' />
         </div>
         <div className='col-12 p-0' id='right-bar'>  
           <BasicInfo />
@@ -22,5 +30,6 @@ function MainBody() {
       </div>
     )
   }
+}
   
-  export default MainBody
+export default MainBody

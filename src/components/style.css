@@ -86,18 +86,18 @@ select{
 
 
 ::-webkit-scrollbar {
-    width: 2px;
+    width: 4px;
 }
 ::-webkit-scrollbar-button {
     /* background: #eee; */
-    background: #888;
+    background: white;
 }
 ::-webkit-scrollbar-track-piece {
-    background: #eee;
+    background: white;
     /* background: #ccc; */
 }
 ::-webkit-scrollbar-thumb {
-    background: #eee;
+    background: gray;
 }
 
 @media only screen and (min-width:850px) {
@@ -110,19 +110,18 @@ select{
     max-height: 100%;
     overflow-y: auto;   
 }
-/* 
+
 .active-sidebar{
-    border: 1px solid #0d6efd!important;
+    background-color: #e3f2fd!important;
     color: #0d6efd!important;
-} */
-
-#left-bar{
-    /* max-height: 100vh!important;
-     */
-    height: calc(100vh - 65px)!important;
-    overflow: scroll!important;
-
+    border: none!important;
+    box-shadow: none!important;
 }
+.active-sidebar div{
+    background-color: #e3f2fd!important;
+    color: #0d6efd!important;
+}
+
 
 @media only screen and (min-width:920px) {
     .profile-icon-bar{
