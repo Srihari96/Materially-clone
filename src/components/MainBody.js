@@ -21,7 +21,7 @@ class MainBody extends React.Component {
         <div className='d-none shadow px-3 py-4' id='left-bar' >
           <Sidebar screen='pc' />
         </div>
-        <div className='col-12 p-0' id='right-bar'>  
+        <div className='col-12 p-0 mx-auto' id='right-bar'>  
           <BasicInfo />
           <GraphChartGrid />
           <OrderList />
